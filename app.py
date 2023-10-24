@@ -1,11 +1,24 @@
+import spacy
 import os
+
+def is_model_installed(model_name):
+    try:
+        # Try to load the model
+        spacy.load(model_name)
+        return True
+    except OSError:
+        return False
+
+model_name = "en_core_web_lg"
+if not is_model_installed(model_name):
+    os.system(f"python -m spacy download {model_name}")
+
 
 # Need to overwrite version of gradio present in Huggingface spaces as it doesn't have like buttons/avatars (Oct 2023)
 #os.system("pip uninstall -y gradio")
 os.system("pip install gradio==3.50.0")
 #os.system("python -m spacy download en_core_web_lg")
 
-import spacy
 spacy.load("en_core_web_lg")
 
 import re
