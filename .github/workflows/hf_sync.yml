@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://spedrickcase:$HF_TOKEN@huggingface.co/spaces/spedrickcase/data_anonymiser main
+        run: git push https://seanpedrickcase:$HF_TOKEN@huggingface.co/spaces/seanpedrickcase/data_anonymiser main
