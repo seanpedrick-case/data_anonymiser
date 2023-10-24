@@ -2,7 +2,7 @@ presidio_analyzer
 presidio_anonymizer
 spacy
 faker
-OpenSSL
+pyOpenSSL
 secrets
 base64
 gradio==3.50.0
