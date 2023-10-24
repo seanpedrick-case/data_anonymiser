@@ -2,5 +2,4 @@ presidio_analyzer
 presidio_anonymizer
 spacy
 faker
-base64
 gradio==3.50.0
